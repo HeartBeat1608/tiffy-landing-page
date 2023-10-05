@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,13 +10,13 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -24,4 +26,32 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.tiffin-large,
+.tiffin-medium,
+.tiffin-small {
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  object-fit: contain;
+  height: auto;
+}
+
+.tiffin-large {
+  background: url("/assets/tiffin-large.png");
+  width: 15vw;
+  height: 15vw;
+}
+
+.tiffin-medium {
+  background: url("/assets/tiffin-medium.png");
+  width: 13vw;
+  height: 13vw;
+}
+
+.tiffin-small {
+  background: url("/assets/tiffin-small.png");
+  width: 11vw;
+  height: 11vw;
 }
