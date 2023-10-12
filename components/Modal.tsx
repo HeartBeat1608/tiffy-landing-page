@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import mixpanel from "mixpanel-browser";
+import { identifyUser } from "@/lib/api/user";
 
 type Props = {
   onClose: () => void;
@@ -13,7 +14,7 @@ const Modal = ({ open, onClose }: Props) => {
 
   if (!open) return null;
 
-  const handleJoin = () => {
+  const handleJoin = async () => {
     setError("");
 
     if (!email) {
@@ -24,6 +25,12 @@ const Modal = ({ open, onClose }: Props) => {
     if (!email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
       setError("Please enter a valid email.");
       return;
+    }
+
+    try {
+      await identifyUser(email);
+    } catch (e) {
+      console.error(e);
     }
 
     // capture this email

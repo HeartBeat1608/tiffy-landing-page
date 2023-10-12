@@ -10,17 +10,20 @@
   },
   "dependencies": {
     "@ant-design/cssinjs": "^1.17.0",
+    "@supabase/supabase-js": "^2.38.0",
     "antd": "^5.9.4",
     "mixpanel-browser": "^2.47.0",
     "next": "13.5.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "@types/mixpanel-browser": "^2.47.3",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/uuid": "^9.0.5",
     "autoprefixer": "^10.4.16",
     "eslint": "^8",
     "eslint-config-next": "13.5.4",
