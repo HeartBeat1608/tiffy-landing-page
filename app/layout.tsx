@@ -24,18 +24,20 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <Script id="gtag">
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-11366018773"
+        ></Script>
+        <Script id="google-analytics">
           {`
-            <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11366018773"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+              dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
 
-  gtag('config', 'AW-11366018773');
-</script>
-            `}
+            gtag("config", "AW-11366018773");
+          `}
         </Script>
       </head>
       <body className={poppins.className}>
