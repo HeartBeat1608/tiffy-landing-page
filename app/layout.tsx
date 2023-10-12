@@ -15,16 +15,32 @@ export const metadata: Metadata = {
   title: "Tiffy | Best tiffins in your area",
   description: "Find the best tiffins and homemade meals in your area.",
   twitter: {
-    images: ["/assets/logo.png"],
+    images: [
+      {
+        url: "/assets/logo.png",
+        width: 800,
+        height: 800,
+        alt: "Tiffy",
+      },
+    ],
     card: "summary_large_image",
     title: "Tiffy | Best tiffins in your area",
     description: "Find the best tiffins and homemade meals in your area.",
   },
   openGraph: {
-    images: ["/assets/logo.png"],
+    images: [
+      {
+        url: "/assets/logo.png",
+        width: 800,
+        height: 800,
+        alt: "Tiffy",
+      },
+    ],
     title: "Tiffy | Best tiffins in your area",
     description: "Find the best tiffins and homemade meals in your area.",
     url: "https://tiffy.vercel.app",
+    siteName: "Tiffy",
+    type: "website",
   },
 };
 
