@@ -7,10 +7,18 @@ const WhatWeBring = () => {
         <h3 className="text-xl md:text-2xl font-semibold border-b-2 border-b-emerald-500 mb-3 px-3 md:px-4 pb-1 text-center">
           We Are Bringing Best DabbaWallas At Your Service
         </h3>
-        <p className="w-full px-3 md:w-[52vw] text-lg text-justify md:text-center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation
+        <p className="w-full px-3 md:w-[70vw] text-sm md:text-lg text-justify md:text-center">
+          <b className="text-emerald-500">Tiffy</b> is a convenient meal
+          management solution, offering fresh, flavorful, and nutritionally
+          balanced meals delivered to your doorstep. With a user-friendly
+          interface and a diverse menu, it aims to{" "}
+          <b className="text-emerald-500">ease meal planning</b> and cater to
+          various tastes and schedules. Tiffy prioritizes quality,
+          affordability, and health, making it a go-to for those seeking a{" "}
+          <b className="text-emerald-500">
+            hassle-free, delicious meal experience.
+          </b>{" "}
+          🍲✨
         </p>
       </div>
     </div>

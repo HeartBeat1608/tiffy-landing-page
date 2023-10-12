@@ -1,4 +1,5 @@
 "use client";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import WhatWeBring from "@/components/WhatWeBring";
@@ -24,6 +25,7 @@ export default function Home() {
       <HeroSection />
       <WhatWeBring />
       <WhyTiffy />
+      <Footer />
     </main>
   );
 }
