@@ -14,6 +14,18 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Tiffy | Best tiffins in your area",
   description: "Find the best tiffins and homemade meals in your area.",
+  twitter: {
+    images: ["/assets/logo.png"],
+    card: "summary_large_image",
+    title: "Tiffy | Best tiffins in your area",
+    description: "Find the best tiffins and homemade meals in your area.",
+  },
+  openGraph: {
+    images: ["/assets/logo.png"],
+    title: "Tiffy | Best tiffins in your area",
+    description: "Find the best tiffins and homemade meals in your area.",
+    url: "https://tiffy.vercel.app",
+  },
 };
 
 export default function RootLayout({
